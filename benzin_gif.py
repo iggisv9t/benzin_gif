@@ -28,9 +28,7 @@ if __name__ == "__main__":
     if not ('pics' in os.listdir('./')):
         os.system('mkdir pics')
 
-    print(sys.argv)
     path = sys.argv[1]
 
     generate_frames(path)
-
     os.system('convert pics/*.png -delay 0.001 pics/output.gif')
