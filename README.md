@@ -7,6 +7,7 @@ It creates `pics` directory with frames in `.png` and `output.gif`
 
 ### Requirements
 opencv: `pip install opencv-python`  
+matplotlib: `pip install matplotlib`  
 [imagemagick](https://imagemagick.org/): usually present in popular linux distributions
 
 ### Output examples
