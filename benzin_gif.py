@@ -5,13 +5,7 @@ import os
 import sys
 
 def save_frame(U, i):
-    fig = plt.figure(figsize=(7, 7))
-    plt.imshow(U,
-              interpolation=None,
-              extent=[-1, 1, -1, 1])
-    plt.axis('off')
-    plt.savefig('./pics/frame{:05d}.png'.format(i), pad_inches=0)
-    plt.close(fig)
+    cv2.imwrite('./pics/frame{:05d}.png'.format(i), U*255)
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
