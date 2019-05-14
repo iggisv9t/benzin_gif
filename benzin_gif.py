@@ -18,8 +18,8 @@ def generate_frames(path):
         save_frame(U, i)
 
 if __name__ == "__main__":
-    if not ('pics' in os.listdir('./')):
-        os.system('mkdir pics')
+    if not os.path.exists('pics'):
+        os.makedirs('pics')
 
     path = sys.argv[1]
 
